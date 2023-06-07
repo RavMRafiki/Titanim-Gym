@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.scss";
 import HomeAdvantage from "./HomeAdvantage";
 import HomeCard from "./HomeCard";
@@ -69,6 +70,10 @@ export default function Home() {
             advantage=" We understand that nutrition plays a crucial role in achieving fitness goals. Our gym offers nutritional guidance and resources to help you make informed food choices and create a balanced eating plan that complements your workout routine."
           />
         </div>
+      </div>
+      <div className="d5">
+        <h2>Check your BMI in our online calculator</h2>
+        <Link to="/bmi">Free Online BMI Calculator</Link>
       </div>
       <div className="d4">
         <div className="stats">

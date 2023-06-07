@@ -114,5 +114,20 @@
   }
 }
 .d5 {
-    
+  background-color: rgb(150, 0, 20);
+  padding: 5rem;
+  text-align: center;
+  font-family: "Krona One";
+  display: flex;
+  flex-direction: column;
+  h2 {
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1%;
+    color: black;
+  }
 }

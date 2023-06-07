@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Krona+One&display=swap");
+
+.d1 {
+  padding: 5rem;
+  text-align: center;
+  height: calc(100vh - 10rem);
+  background-image: url("./Images/home1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .d1-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60%;
+    justify-content: center;
+    .title {
+      margin-top: -10rem;
+      font-size: 4rem;
+      font-family: "Fira Code";
+      color: white;
+    }
+    .desc {
+      margin-top: -6rem;
+      font-family: "Krona One";
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}
+.d2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10rem;
+  padding: 5rem 10rem;
+  color: white;
+  background-color: rgb(150, 0, 20);
+  text-align: center;
+  font-family: "Krona One";
+  .card {
+    img {
+      border-radius: 50%;
+    }
+  }
+}

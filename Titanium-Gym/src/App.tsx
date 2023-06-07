@@ -5,6 +5,7 @@ import AboutUs from "./About";
 import Classes from "./Classes";
 import Gallery from "./Gallery";
 import OurTeam from "./OurTeam";
+import BmiCalculator from "./BmiCalculator";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
             <Link to="/classes">Classes</Link>
           </li>
           <li>
+            <Link to="/bmi">BMI</Link>
+          </li>
+          <li>
             <Link to="/gallery">Gallery</Link>
           </li>
           <li>
@@ -39,6 +43,7 @@ function App() {
         <Route path="/classes" element={<Classes />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/team" element={<OurTeam />}></Route>
+        <Route path="/bmi" element={<BmiCalculator />}></Route>
       </Routes>
     </>
   );

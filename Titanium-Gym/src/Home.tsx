@@ -1,5 +1,7 @@
 import "./Home.scss";
+import HomeAdvantage from "./HomeAdvantage";
 import HomeCard from "./HomeCard";
+import HomeStat from "./HomeStat";
 
 export default function Home() {
   return (
@@ -38,7 +40,45 @@ export default function Home() {
         />
       </div>
       <div className="d3">
-        sec 3
+        <div className="title">
+          <h2>OUR ADVANTAGES</h2>
+        </div>
+        <div className="advantages">
+          <HomeAdvantage
+            icon="fa fa-gavel"
+            advantage="Our gym is equipped with the latest and high-quality fitness equipment, ensuring that our members have access to a wide range of machines, weights, and training tools to meet their fitness needs."
+          />{" "}
+          <HomeAdvantage
+            icon="fa fa-id-card"
+            advantage="We have a team of highly qualified and experienced personal trainers who are dedicated to helping our members achieve their fitness goals. They provide personalized guidance, motivation, and support throughout your fitness journey."
+          />{" "}
+          <HomeAdvantage
+            icon="fa fa-users"
+            advantage="We offer a diverse selection of group fitness classes led by certified instructors. From high-intensity workouts to yoga and dance, our classes cater to different interests and fitness levels, creating a motivating and fun atmosphere for our members."
+          />{" "}
+          <HomeAdvantage
+            icon="fa fa-eraser"
+            advantage="We prioritize cleanliness and hygiene within our gym. Our facilities are regularly cleaned, and we maintain a safe environment for our members to work out comfortably."
+          />{" "}
+          <HomeAdvantage
+            icon="fa fa-tasks"
+            advantage="We provide tools and resources to track your progress and measure your achievements. From body composition analysis to fitness assessments, we help you monitor your results and adjust your training program accordingly."
+          />{" "}
+          <HomeAdvantage
+            icon="fa fa-cutlery"
+            advantage=" We understand that nutrition plays a crucial role in achieving fitness goals. Our gym offers nutritional guidance and resources to help you make informed food choices and create a balanced eating plan that complements your workout routine."
+          />
+        </div>
+      </div>
+      <div className="d4">
+        <div className="stats">
+          <HomeStat number={12} stat="# Classes" />
+          <HomeStat number={8} stat="# Trainers" />
+          <HomeStat number={729} stat="# Happy Clients" />
+          <HomeStat number={2200} stat="# Sweat Hours" />
+          <HomeStat number={12} stat="# Classes" />
+          <HomeStat number={200} stat="# Calories (x1000)" />
+        </div>
       </div>
     </div>
   );

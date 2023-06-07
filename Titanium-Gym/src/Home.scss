@@ -44,3 +44,75 @@
     }
   }
 }
+.d3 {
+  padding: 5rem;
+  text-align: center;
+  min-height: calc(100vh - 10rem);
+  background-image: url("./Images/home2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-basis: 0;
+  flex-direction: column;
+  place-content: center;
+  .title {
+    font-family: "Fira Code";
+    color: white;
+    font-size: 4rem;
+  }
+  .advantages {
+    font-family: "Fira Code";
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    i {
+      padding: 1rem;
+
+      font-size: 4rem;
+    }
+    div {
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+    }
+  }
+}
+.d4 {
+  background-image: url("./Images/home3.jpg");
+  padding: 5rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    place-content: center;
+    .card {
+      width: 15rem;
+      height: 15rem;
+      margin: 1rem;
+      font-family: "Krona One";
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .number {
+        font-family: "Fira Code";
+        font-size: 4rem;
+      }
+      .line {
+        height: 3px;
+        background-color: rgb(150, 0, 20);
+      }
+    }
+  }
+}
+.d5 {
+    
+}

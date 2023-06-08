@@ -4,7 +4,6 @@ import Home from "./Home";
 import AboutUs from "./About";
 import Classes from "./Classes";
 import Gallery from "./Gallery";
-import OurTeam from "./OurTeam";
 import BmiCalculator from "./BmiCalculator";
 import { ReactElement, useState } from "react";
 
@@ -17,13 +16,13 @@ function App(): ReactElement {
           <Link to="/">
             <img src="logo.svg" alt="Titanum Gym logo" height="10" />
           </Link>
-          {navbarOpen ? (
-            <button onClick={() => setNavbarOpen((prev) => !prev)}>
+          <button onClick={() => setNavbarOpen((prev) => !prev)}>
+            {navbarOpen ? (
               <i className="fa fa-times" aria-hidden="true"></i>
-            </button>
-          ) : (
-            <></>
-          )}
+            ) : (
+              <i className="fa fa-bars" aria-hidden="true"></i>
+            )}
+          </button>
         </div>
         <ul className={navbarOpen ? "" : "navbar-closed"}>
           <li>
@@ -42,20 +41,12 @@ function App(): ReactElement {
             <Link to="/gallery">Gallery</Link>
           </li>
         </ul>
-        <button onClick={() => setNavbarOpen((prev) => !prev)}>
-          {navbarOpen ? (
-            <></>
-          ) : (
-            <i className="fa fa-bars" aria-hidden="true"></i>
-          )}
-        </button>
       </nav>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
         <Route path="/classes" element={<Classes />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
-        <Route path="/team" element={<OurTeam />}></Route>
         <Route path="/bmi" element={<BmiCalculator />}></Route>
       </Routes>
     </>

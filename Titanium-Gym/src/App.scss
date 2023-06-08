@@ -12,6 +12,7 @@ nav {
   top: 0;
   left: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-family: "Fira Code";
   * {
@@ -27,9 +28,16 @@ nav {
   }
   ul {
     display: flex;
+    flex-wrap: wrap;
+    @media (max-width:1000px) {
+      
+    }
     gap: 2rem;
     margin: 0;
     padding: 0;
+  }
+  ul.navbar-closed {
+    display: none;
   }
   li {
     list-style: none;
@@ -37,6 +45,16 @@ nav {
     a {
       color: white;
       text-decoration: none;
+    }
+  }
+  button {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 2rem;
+    color: white;
+    @media (min-width: 1000px) {
+      visibility: hidden;
     }
   }
 }

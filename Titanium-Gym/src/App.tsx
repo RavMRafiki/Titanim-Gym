@@ -6,8 +6,10 @@ import Classes from "./Classes";
 import Gallery from "./Gallery";
 import OurTeam from "./OurTeam";
 import BmiCalculator from "./BmiCalculator";
+import { ReactElement, useState } from "react";
 
-function App() {
+function App():ReactElement {
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false)
   return (
     <>
       <nav>
@@ -16,7 +18,7 @@ function App() {
             <img src="logo.svg" alt="Titanum Gym logo" height="10" />
           </Link>
         </div>
-        <ul>
+        <ul className={navbarOpen ? "" : "navbar-closed"}>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -36,6 +38,10 @@ function App() {
             <Link to="/team"></Link>
           </li>
         </ul>
+        <button onClick={()=>
+        setNavbarOpen(prev => !prev)}>
+          <i className="fa fa-bars" aria-hidden="true"></i>
+        </button>
       </nav>
       <Routes>
         <Route path="/" element={<Home />}></Route>

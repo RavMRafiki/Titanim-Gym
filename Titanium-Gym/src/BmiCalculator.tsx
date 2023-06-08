@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./BmiCalculator.scss";
 export default function BmiCalculator() {
   const [weight, setWeight] = useState<number>();

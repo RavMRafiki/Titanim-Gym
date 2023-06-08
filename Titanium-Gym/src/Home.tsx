@@ -73,7 +73,10 @@ export default function Home() {
       </div>
       <div className="d5">
         <h2>Check your BMI in our online calculator</h2>
-        <Link to="/bmi">Free Online BMI Calculator</Link>
+        <Link to="/bmi">
+          <i className="fa fa-calculator" aria-hidden="true"></i> Free Online
+          BMI Calculator
+        </Link>
       </div>
       <div className="d4">
         <div className="stats">

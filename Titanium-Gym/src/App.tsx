@@ -8,8 +8,8 @@ import OurTeam from "./OurTeam";
 import BmiCalculator from "./BmiCalculator";
 import { ReactElement, useState } from "react";
 
-function App():ReactElement {
-  const [navbarOpen, setNavbarOpen] = useState<boolean>(false)
+function App(): ReactElement {
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(true);
   return (
     <>
       <nav>
@@ -17,6 +17,13 @@ function App():ReactElement {
           <Link to="/">
             <img src="logo.svg" alt="Titanum Gym logo" height="10" />
           </Link>
+          {navbarOpen ? (
+            <button onClick={() => setNavbarOpen((prev) => !prev)}>
+              <i className="fa fa-times" aria-hidden="true"></i>
+            </button>
+          ) : (
+            <></>
+          )}
         </div>
         <ul className={navbarOpen ? "" : "navbar-closed"}>
           <li>
@@ -34,13 +41,13 @@ function App():ReactElement {
           <li>
             <Link to="/gallery">Gallery</Link>
           </li>
-          <li>
-            <Link to="/team"></Link>
-          </li>
         </ul>
-        <button onClick={()=>
-        setNavbarOpen(prev => !prev)}>
-          <i className="fa fa-bars" aria-hidden="true"></i>
+        <button onClick={() => setNavbarOpen((prev) => !prev)}>
+          {navbarOpen ? (
+            <></>
+          ) : (
+            <i className="fa fa-bars" aria-hidden="true"></i>
+          )}
         </button>
       </nav>
       <Routes>

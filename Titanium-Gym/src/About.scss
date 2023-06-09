@@ -29,7 +29,7 @@ div.about-main {
 }
 div.about-team {
   margin: 0;
-  background-image: radial-gradient(rgb(40, 0, 5),black);
+  background-image: radial-gradient(rgb(40, 0, 5), black);
   text-align: center;
   color: white;
   font-family: "Krona One";
@@ -40,7 +40,7 @@ div.about-team {
       font-size: 6rem;
     }
   }
-  .person:nth-child(2n) {
+  .person:nth-child(2n + 1) {
     background-color: rgb(150, 0, 20);
     @media (min-width: 1000px) {
       flex-direction: row-reverse;

@@ -54,7 +54,9 @@ nav {
     padding: 0;
   }
   ul.navbar-closed {
-    display: none;
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
   li {
     list-style: none;

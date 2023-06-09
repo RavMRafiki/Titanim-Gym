@@ -6,15 +6,18 @@ import Classes from "./Classes";
 import Gallery from "./Gallery";
 import BmiCalculator from "./BmiCalculator";
 import { ReactElement, useState } from "react";
+import PageNotFound from "./PageNotFound";
+import Footer from "./Footer";
+import logo from "./Images/logo.png";
 
 function App(): ReactElement {
-  const [navbarOpen, setNavbarOpen] = useState<boolean>(true);
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
   return (
     <>
       <nav>
         <div>
           <Link to="/">
-            <img src="logo.svg" alt="Titanum Gym logo" height="10" />
+            <img src={logo} alt="Titanum Gym logo" height="10" />
           </Link>
           <button onClick={() => setNavbarOpen((prev) => !prev)}>
             {navbarOpen ? (
@@ -48,7 +51,9 @@ function App(): ReactElement {
         <Route path="/classes" element={<Classes />}></Route>
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/bmi" element={<BmiCalculator />}></Route>
+        <Route path="/*" element={<PageNotFound />}></Route>
       </Routes>
+      <Footer></Footer>
     </>
   );
 }

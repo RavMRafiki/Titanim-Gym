@@ -1,0 +1,35 @@
+.error {
+  min-height: calc(100vh - 7rem);
+  padding-top: 7rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Krona One";
+  h1 {
+    font-size: 11rem;
+    @media (min-width: 1000px) {
+      font-size: 15rem;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    @media (min-width: 1000px) {
+      font-size: 5rem;
+    }
+  }
+  button {
+    background-color: rgb(150, 0, 20);
+    border: 0;
+    padding: 1rem;
+    border-radius: 5%;
+    font-size: 3em;
+    font-family: "Krona One";
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

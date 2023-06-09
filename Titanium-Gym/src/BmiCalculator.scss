@@ -8,7 +8,7 @@
   padding-inline: 5rem;
   padding-bottom: 5rem;
   @media (max-width: 1000px) {
-  padding-bottom: 0;
+    padding-bottom: 0;
     padding-inline: 0;
   }
   margin: 0;
@@ -40,9 +40,9 @@
     label {
       font-family: "Krona One";
       font-size: 2rem;
-  @media (max-width:1000px) {
-    font-size: 1rem;
-  }
+      @media (max-width: 1000px) {
+        font-size: 1rem;
+      }
       margin-left: 2rem;
       margin-top: 0.7rem;
       margin-top: 2rem;

@@ -34,9 +34,9 @@ function App(): ReactElement {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/classes">Classes</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/bmi">BMI</Link>
           </li>
